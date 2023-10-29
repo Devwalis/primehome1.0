@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+* {
+  background-color: (var(--dark-azul));
+
+}
+
+
+:root {
+  --amarelo-fosco: #B8860B;
+  --amarelo-aceso: #d89219;
+  --azul-madrugada: #000080;
+  --dark-azul: #483D8B;
+  --azul-noite: #191970;
+  --branco: #F0F8FF;
+
+
+}
+
+body {
+  background-color: #483D8B;
+  font-family: Lato;
+  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--dark-azul);
+  flex-wrap: wrap;
+
+}
+
+.logo {
+  display: block;
+  height: 80px;
+  width: 80px;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 1rem; */
+  flex-wrap: wrap;
+  padding-inline: 40px;
+  padding-block: 15px;
+  background-color: var(--azul-noite);
+}
+
+.logo {
+  height: 100%;
+  border-radius: var(--dark-azul);
+  display: block;
+
+}
+
+.imglogo {
+  max-width: 60px;
+  height: 100%;
+  border-radius: 50px;
+  display: block;
+
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: var(--branco);
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-links:hover {
+  color: var(--dark-azul);
+  transition: .4s
+}
+
+ /*main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;*/
+
+
+  .gradient {
+    position: absolute;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0.3%,var(--dark-azul) 150.00%);
+  }
+
+  .link-contato {
+    display: inline-block;
+    padding: 10px 20px; /* Ajuste o padding conforme necessário */
+    background-color: var(--amarelo-aceso); /* Substitua pelo seu código de cor */
+    color:var(--branco); /* Cor do texto */
+    text-decoration: none; /* Remova a decoração de texto do link */
+    border: none; /* Remova a borda do link */
+    border-radius: 5px; /* Adicione bordas arredondadas, se desejar */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efeito de transição suave ao passar o mouse */
+}
+
+.link-contato:hover {
+    background-color: var(--cor-hover-do-botao); /* Cor de fundo quando passar o mouse */
+}
+
+  
+.banner-text{
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    padding-left: 10%;
+    top: 50%;
+}
+
+.banner-title{
+    font-size: 46px;
+    color: var(--amarelo-aceso);
+    
+}
+
+.banner-small-text {
+    font-size: 22px;
+    color: var(--amarelo-aceso)
+    } 
+
+.carousel-container {
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+
+.carousel {
+  position: relative;
+  display: flex;
+  overflow: hidden; /* Garante que o gradiente não vaze para fora do carrossel */
+  height: 100%;
+  width: 100%;
+  
+  
+}
+
+  
+  
+.carousel img {
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
+  
+
+  
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 10px 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #fff;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  bottom: -80px;
+ 
+  right: 40%;
+  position: absolute;
+  z-index: 9999;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #fff;
+}
+
+
+#img-quemsomos1 {
+  background-color: var(--azul-madrugada);
+  width: 250px;
+  border-radius: 10px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#quemsomos1{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 0;
+  max-height: 80vh; /* Defina uma altura máxima para a seção */
+  overflow-y: auto;
+    }
+
+.quemsomos1>div {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.quemsomos > div img{
+    flex-wrap: wrap;
+    border-radius: 10px;
+
+
+}
+
+
+    
+    
+
+
+
+
+
+
+#quemsomos1 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: var(--azul-madrugada);
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: -1rem; */
+  gap: 2rem;
+
+
+
+}
+.quemsomos h2 {
+   
+    margin-top: -435px;
+    color: var(--branco);
+   
+    right: 33%;
+    position:absolute;
+    
+
+  }
+
+.quemsomos p {
+  max-width: 600px;
+  color: var(--branco);
+  text-align: justify;
+  flex-wrap: wrap;
+  
+
+}
+
+
+
+
+
+footer {
+  background-color: var(--branco);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+footer>div {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+#whats{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    height: 50px;
+    width:50px;
+    
+    z-index: 100;
+   
+
+  }

@@ -1,0 +1,4 @@
+#B8860B amarelo-fosco
+#DAA520 amarelo-aceso
+#483D8B dark-azul
+#191970 azul-noite
